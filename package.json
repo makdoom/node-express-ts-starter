@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "format": "eslint src/**/*.ts --fix",
     "prettier": "prettier '**/*.{ts,tsx}' --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-commit": "lint-staged"
   },
   "keywords": [],
   "author": "",
