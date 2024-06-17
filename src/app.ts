@@ -10,6 +10,8 @@ const app = express();
 app.use(morganMiddleware);
 app.use(cors());
 
+console.log("hello from app");
+
 app.get("/", (req, res) => res.send("✅ Server is running!"));
 app.use("/api/v1/", mainRouter);
 
